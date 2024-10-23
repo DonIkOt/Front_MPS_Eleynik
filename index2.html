@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Список фильмов и жанров</title>
+    <title>Список фильмов, регистрация и логин</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -37,15 +37,48 @@
         h2 {
             color: #333;
         }
-        ul, ol {
-            margin-left: 20px;
+        form {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        input, select {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        label {
+            font-weight: bold;
+        }
+        button {
+            padding: 10px 15px;
+            margin-right: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
+        }
+        .clear-btn {
+            background-color: #f44336;
+        }
+        .clear-btn:hover {
+            background-color: #e57373;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Список фильмов и жанров</h1>
+    <h1>Мой список фильмов и регистрация</h1>
 </header>
 
 <!-- Меню с разделами страницы -->
@@ -54,6 +87,8 @@
         <li><a href="#movies">Сериалы и фильмы</a></li>
         <li><a href="#genres">Жанры кино</a></li>
         <li><a href="#nested-list">Многоуровневый список</a></li>
+        <li><a href="#login">Форма логина</a></li>
+        <li><a href="#registration">Форма регистрации</a></li>
     </ul>
 </nav>
 
@@ -118,6 +153,57 @@
             </ul>
         </li>
     </ul>
+</section>
+
+<!-- Форма логина -->
+<section id="login">
+    <h2>Форма логина</h2>
+    <form action="#" method="post">
+        <label for="username">Логин:</label>
+        <input type="text" id="username" name="username" placeholder="Введите логин" required>
+
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" placeholder="Введите пароль" required>
+
+        <button type="submit">Войти</button>
+        <button type="reset" class="clear-btn">Очистить</button>
+    </form>
+</section>
+
+<!-- Форма регистрации -->
+<section id="registration">
+    <h2>Форма регистрации</h2>
+    <form action="#" method="post">
+        <label for="firstname">Имя:</label>
+        <input type="text" id="firstname" name="firstname" placeholder="Введите ваше имя" required>
+
+        <label for="lastname">Фамилия:</label>
+        <input type="text" id="lastname" name="lastname" placeholder="Введите вашу фамилию" required>
+
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Введите ваш телефон" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
+
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" placeholder="Придумайте пароль" required>
+
+        <label for="gender">Пол:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Выберите пол</option>
+            <option value="male">Мужской</option>
+            <option value="female">Женский</option>
+            <option value="other">Другой</option>
+        </select>
+
+        <label>
+            <input type="checkbox" name="agreement" required> Я соглашаюсь с условиями
+        </label>
+
+        <button type="submit">Зарегистрироваться</button>
+        <button type="reset" class="clear-btn">Очистить</button>
+    </form>
 </section>
 
 </body>
