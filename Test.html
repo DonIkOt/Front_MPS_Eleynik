@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пример со стилями</title>
+    <!-- Подключаем внешний CSS-файл -->
+    <link rel="stylesheet" href="test_css.css">
+</head>
+<body>
+
+    <!-- Обертка для всего содержимого -->
+    <div class="container">
+
+        <!-- Шапка сайта -->
+        <header class="site-header">
+            <h1 class="main-title">Страница со Стилями</h1>
+            <p class="header-paragraph">ПОдключение стилей через CSS-файл.</p>
+        </header>
+
+        <!-- Первый раздел -->
+        <section class="content-section">
+            <h2 class="section-title">Шо це</h2>
+            <p class="section-paragraph">Это тип страница демонстрация юза css стилей к различным элементам</p>
+            <p class="highlight-paragraph">Используется шрифт Roboto из Google Fonts,  селекторы и применяем стили ко всему документу.</p>
+        </section>
+
+        <!-- Второй раздел -->
+        <section class="content-section">
+            <h2 class="section-title">Далее</h2>
+            <ul class="task-list">
+                <li class="task-item">HTML</li>
+                <li class="task-item">CSS</li>
+                <li class="task-item">Селекторы и стили</li>
+                <li class="task-item last-item">Шрифты из Google Fonts</li>
+            </ul>
+        </section>
+
+        <!-- Футер с ссылкой наверх -->
+        <footer class="site-footer">
+            <p class="footer-paragraph">Это конец страницы. <a href="#top" class="footer-link">Вернуться наверх</a></p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
