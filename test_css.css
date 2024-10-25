@@ -12,6 +12,7 @@ body {
 
 /* Контейнер для обертки всего контента */
 .container {
+    display: inline-block;
     max-width: 900px;
     margin: 0 auto;
     background-color: #fff;
@@ -36,7 +37,7 @@ body {
     margin-bottom: 10px;
     text-decoration: underline;
 }
-
+d
 .header-paragraph {
     font-size: 18px;
     color: #ddd;
@@ -44,13 +45,15 @@ body {
 
 /* Стили для разделов */
 .content-section {
-    margin-bottom: 30px;
-    padding: 15px;
+    margin-bottom: 10px;
+    padding: 5px;
     border: 1px solid #ccc;
     border-radius: 10px;
     background-color: #f9f9f9;
     box-sizing: border-box;
-    width: 50%;
+    width: 30%;
+    margin-left: 15px;
+    display: inline-block;
 }
 
 .section-title {
