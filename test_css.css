@@ -11,9 +11,10 @@ body {
 
 /* Стиль для основной карточки товаров */
 .product-card {
-    width: 410px; /* Ширина контейнера для карточек */
-    height: 306px;
+    width: 370px; /* Ширина контейнера для карточек */
+    height: 266px;
     background-color: #ffffff;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -22,8 +23,7 @@ body {
 .product-card-title {
     font-size: 24px;
     color: #333333;
-    margin-bottom: 20px;
-    margin-left: 15px;
+    margin-bottom: 15px;
 }
 
 /* Стиль для списка товаров */
@@ -36,11 +36,10 @@ body {
 /* Стиль для каждой карточки товара */
 .product-item {
     width: 50%;
-    height: 80%;
+    height: 200px;
     background-color: #b0b0b0; /* Серый цвет карточки */
     border-radius: 20px;
     padding: 15px;
-    margin: 15px;
     box-sizing: border-box;
     display: inline-block;
     flex-direction: column;
@@ -51,7 +50,7 @@ body {
 /* Внутренний блок товара с заливкой */
 .product-box {
     width: 100%;
-    height: 130px;
+    height: 120px;
     background-color: #ffe599; /* Желтая заливка */
     border-radius: 15px;
 }
@@ -63,9 +62,10 @@ body {
     color: #ffffff;
     padding: 10px 0;
     border: none;
-    margin-top: 10px;
     border-radius: 10px;
     font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     cursor: pointer;
     text-align: center;
 }
@@ -73,6 +73,8 @@ body {
 .buy-button:hover {
     background-color: #333333;
 }
+
+
 
 
 
