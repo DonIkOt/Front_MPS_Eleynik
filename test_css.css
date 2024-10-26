@@ -7,6 +7,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    width: fit-content;
 }
 
 /* Стили для навигационной панели */
@@ -59,7 +60,6 @@ body {
 .nav a:hover {
     color: #0074D9; /* Эффект наведения: цвет текста синий */
 }
-
 
 
 
