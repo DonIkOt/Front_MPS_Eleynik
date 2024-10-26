@@ -1,78 +1,66 @@
-/* Основные стили для всей страницы */
+/* Основные стили для страницы */
 body {
-    background-color: #f0f0f0; /* Светлый фон для страницы */
+    background-color: #b3b3b3; /* Серый фон страницы */
+    margin: 0;
+    font-family: Arial, sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    margin: 0;
-    font-family: Arial, sans-serif;
 }
 
-/* Стиль для основной карточки товаров */
-.product-card {
-    width: 370px; /* Ширина контейнера для карточек */
-    height: 266px;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Заголовок карточки */
-.product-card-title {
-    font-size: 24px;
-    color: #333333;
-    margin-bottom: 15px;
-}
-
-/* Стиль для списка товаров */
-.product-list {
+/* Стили для навигационной панели */
+.header {
+    background-color: #001f3f; /* Темно-синий фон для панели */
+    color: white;
     display: flex;
-    gap: 20px; /* Промежуток между карточками */
-    justify-content: center;
-}
-
-/* Стиль для каждой карточки товара */
-.product-item {
-    width: 50%;
-    height: 200px;
-    background-color: #b0b0b0; /* Серый цвет карточки */
-    border-radius: 20px;
-    padding: 15px;
-    box-sizing: border-box;
-    display: inline-block;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-between; /* Равномерное распределение элементов */
+    justify-content: space-between;
+    padding: 20px 40px;
+    border-radius: 8px;
+    gap: 30px;
+    width: fit-content; /* Элемент "hug" — ширина соответствует содержимому */
 }
 
-/* Внутренний блок товара с заливкой */
-.product-box {
+/* Стили для никнейма */
+.nickname {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+/* Стили для навигационного меню */
+.nav {
+    display: flex;
+    gap: 30px; /* Промежуток между ссылками */
+}
+
+.nav a {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+/* Подчеркивание с отступом от текста в синем цвете */
+.nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
     width: 100%;
-    height: 120px;
-    background-color: #ffe599; /* Желтая заливка */
-    border-radius: 15px;
+    height: 2px;
+    background-color: #0074D9; /* Синий цвет подчеркивания */
 }
 
-/* Кнопка "Купить" */
-.buy-button {
-    width: 100%;
-    background-color: #555555;
-    color: #ffffff;
-    padding: 10px 0;
-    border: none;
-    border-radius: 10px;
-    font-size: 16px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    cursor: pointer;
-    text-align: center;
+.nav a:hover {
+    color: #0074D9; /* Эффект наведения: цвет текста синий */
 }
 
-.buy-button:hover {
-    background-color: #333333;
-}
+
 
 
 
