@@ -1,4 +1,4 @@
-/* Общие стили */
+/* Сброс отступов */
 * {
     margin: 0;
     padding: 0;
@@ -6,45 +6,88 @@
 }
 
 body {
+    background-color: #001f3f;
+    color: white;
     font-family: Arial, sans-serif;
-    background-color: #b3b3b3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-/* Стили для header */
-.header {
-    background-color: #001f3f;
+/* Стили секции */
+.about-section {
+    width: 90%;
+    max-width: 1200px;
     padding: 20px;
-
+    background-color: #001f3f;
 }
 
 .container {
-    display: flex; /*позволяет расположить ссылки внутри контейнера .nav в одну строку (горизонтально).
-    Flex-контейнер  делает возможным центрирование nickname и блока .nav в одном ряду.*/
-    justify-content: space-around;
-    align-items: center;
-    margin: 0 auto;
-    gap: 50px;
-}
-
-/* Блок с никнеймом */
-.nickname {
-    color: white;
-    font-size: 36px;
-    font-weight: bold;
-    font-family: 'Montserrat',sans-serif;
-}
-
-/* Блок с навигацией */
-.nav {
     display: flex;
-    gap: 10px; /* расстояние между ссылками */
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
 }
 
-.nav a {
-    font-size: 36px;
-    color: white;
-    font-family: 'Inter',serif;
+/* Блок с текстом */
+.text-content {
+    max-width: 50%;
 }
+
+.text-content h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 64px;
+    font-weight: 800;
+    margin-bottom: 10%;
+    white-space: nowrap;
+}
+
+.text-content p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    line-height: 1.5;
+    margin-bottom: 10%;
+}
+
+.contact-button {
+    padding: 0.5em 1.5em; /* Отступы для вертикали и горизонтали */
+    background-color: #d3d3d3; /* Цвет фона кнопки */
+    color: #001f3f; /* Цвет текста */
+    font-size: 40px; /* Размер шрифта */
+    font-weight: bold;
+    border: none;
+    border-radius: 30px; /* Скругление краев кнопки */
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    display: inline-block; /* Гарантирует, что кнопка занимает нужное место по размеру текста */
+}
+
+.contact-button:hover {
+    background-color: #ff9933; /* Цвет фона при наведении */
+    color: #FFFFFF;
+}
+
+/* Аватар */
+.avatar-container {
+    width: 40%; /* Задаем ширину контейнера относительно родителя */
+    aspect-ratio: 1 / 1; /* Сохраняем квадратное соотношение сторон */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* Делает аватар круглым */
+    overflow: hidden;
+}
+
+.avatar {
+    width: 100%; /* Изображение полностью заполняет контейнер */
+    height: 100%;
+    object-fit: cover; /* Подстраивает изображение под контейнер */
+}
+
+
+
 
 
 
