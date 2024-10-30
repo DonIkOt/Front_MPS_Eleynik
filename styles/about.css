@@ -1,54 +1,7 @@
-/* Общие стили */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body {
-    font-family: Arial, sans-serif;
-    background-color: #b3b3b3;
-}
-/* Стили для header */
-.header {
-    background-color: #001f3f;
-    padding: 20px;
-    border-bottom:  1px solid grey ;
-}
-
-.header_content {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 55px 0;
-
-}
-
-.container {
-    max-width: 1440px;
-    margin: 0 auto;
-}
-/* Блок с никнеймом */
-.nickname {
-    color: white;
-    font-size: 36px;
-    font-weight: bold;
-    font-family: 'Montserrat',sans-serif;
-}
-/* Блок с навигацией */
-.nav {
-    display: flex;
-    gap: 40px; /* расстояние между ссылками */
-}
-.nav a {
-    font-size: 36px;
-    color: white;
-    font-family: 'Inter',serif;
-}
-
 .about-section {
     min-height: calc(100vh - 84px);
     padding: 20px;
-    background-color: #001f3f;
+    background-color: var(--primary-bg);
 }
 
 /* Блок с текстом */
@@ -81,7 +34,7 @@ body {
 .contact-button {
     padding: 0.5em 1.5em; /* Отступы для вертикали и горизонтали */
     background-color: #d3d3d3; /* Цвет фона кнопки */
-    color: #001f3f; /* Цвет текста */
+    color: var(--primary-bg); /* Цвет текста */
     font-size: 40px; /* Размер шрифта */
     font-weight: bold;
     border: none;
@@ -113,13 +66,6 @@ body {
     height: 100%;
     object-fit: cover; /* Подстраивает изображение под контейнер */
 }
-
-
-
-
-
-
-
 
 
 
