@@ -1,0 +1,87 @@
+/* Секция контактов */
+.contacts-section {
+    background-color: #205783;
+    padding: 50px 0;
+    padding-bottom: 10vh;
+    text-align: center;
+}
+
+.contacts-section__title {
+    font-size: 72px;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    margin-bottom: 40px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Контейнер для карточек */
+.contacts-section__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+}
+
+/* Общие стили для карточек контактов */
+.contact-card {
+    background-color: #0C1B2D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    width: 35vh;
+    height: 35vh;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.contact-card h3 {
+    font-size: 48px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.contact-card__link {
+    display: inline-block;
+    background-color: #e6e6e6;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+
+    transition: background-color 0.3s ease;
+}
+
+.contact-card__link:hover {
+    background-color: #ccc;
+}
+
+/* Индивидуальные стили для карточек */
+.contact-card--github {
+    background-color: #0C1B2D;
+}
+
+.contact-card--telegram {
+    background-color: #d9b2a8;
+}
+
+.contact-card--phone {
+    background-color: #0C1B2D;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .contacts-section__content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-card {
+        width: 100%;
+        max-width: 400px;
+    }
+}

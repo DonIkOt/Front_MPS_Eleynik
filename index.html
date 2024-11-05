@@ -9,7 +9,8 @@
 </head>
 <body>
 
-    <header class="header">
+    <header id="begin" class="header">
+        
         <div class="container">
             <div class="header__content">
                     <!-- Блок с никнеймом -->
@@ -26,7 +27,7 @@
             </div>
     </header>
 
-    <section class="about-section">
+    <section id="about" class="about-section">
         <div class="container">
             <div class="about-section__content">
             <div class="text-content">
@@ -66,7 +67,7 @@
             </div>
         </div>
     </section>
-    <section class="projects-section">
+    <section id="works" class="projects-section">
         <div class="container">
             <h2 class="projects-section__title">Мои проекты</h2>
             <div class="projects-section__content">
@@ -97,6 +98,62 @@
         </div>
     </section>
 
+    <section class="contact-section">
+        <div class="container">
+            <h2 class="contact-section__title">ОСТАВЬТЕ ЗАЯВКУ</h2>
+            <form class="contact-form">
+                <div class="contact-form__group">
+                    <input type="text" placeholder="Ваше имя" class="contact-form__input">
+                </div>
+                <div class="contact-form__group">
+                    <input type="email" placeholder="Ваша почта" class="contact-form__input">
+                </div>
+                <div class="contact-form__group">
+                    <input type="tel" placeholder="Ваш телефон" class="contact-form__input">
+                </div>
+                <div class="contact-form__buttons">
+                    <button type="reset" class="contact-form__button contact-form__button--reset">Очистить</button>
+                    <button type="submit" class="contact-form__button contact-form__button--submit">Отправить</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section id="contacts" class="contacts-section">
+        <div class="container">
+            <h2 class="contacts-section__title">Контакты</h2>
+            <div class="contacts-section__content">
+                <div class="contact-card contact-card--github">
+                    <h3>Github</h3>
+                    <a href="https://github.com" class="contact-card__link">Ссылка</a>
+                </div>
+                <div class="contact-card contact-card--telegram">
+                    <h3>Telegram</h3>
+                    <a href="https://t.me" class="contact-card__link">Ссылка</a>
+                </div>
+                <div class="contact-card contact-card--phone">
+                    <h3>Телефон</h3>
+                    <a href="tel:+123456789" class="contact-card__link">+123456789</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer  id="end" class="foter">
+        <div class="container">
+            <div class="header__content">
+                    <!-- Блок с никнеймом -->
+                    <div class="header__nickname">@NICKNAME</div>
+                    <!-- Блок с навигацией -->
+                    <nav class="nav">
+                    <nav class="foter__nav">
+                        <a href="#works">МОИ РАБОТЫ</a>
+                        <a href="#about">ОБО МНЕ</a>
+                        <a href="#contacts">КОНТАКТЫ</a>
+                    </nav>
+                </div>
+            </div>
+            </div>
+        </footer>
 </body>
 </html>
 
