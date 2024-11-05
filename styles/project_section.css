@@ -1,0 +1,89 @@
+.projects-section {
+    color: var(--primary-color);
+    padding: 50px 0;
+    background-color: var(--primary-bg);
+}
+
+/* Секция проектов */
+
+.projects-section__title {
+    font-size: 72px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: #ffffff;
+    padding-top: 135px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+/* Вертикальное расположение проектов */
+.projects-section__content {
+    display: flex;
+    flex-direction: column; /* Проекты идут друг под другом */
+    gap: 115px;
+}
+
+/* Проекты */
+.project {
+    display: flex;
+    flex-direction: row;
+    background-color: #1F3558;
+    transition: background-color 0.3s ease;
+}
+
+.project:hover {
+    background-color: #27486C;
+}
+
+/* Управление порядком элементов в проекте */
+.project--reversed {
+    flex-direction: row-reverse; /* Меняет порядок элементов: текст → картинка */
+}
+
+/* Изображение в проекте */
+.project__image {
+    width: 50%;
+    height: 367px;
+}
+
+/* Контент проекта */
+.project__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Центровка по вертикали */
+    align-items: flex-end; /* Текст примыкает к противоположному краю */
+    flex: 1; /* Растягиваем на всю доступную ширину */
+}
+
+.project__title {
+    font-size: 48px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    width: 75%;
+    color: #ffffff;
+}
+
+.project__description {
+    font-size: 36px;
+    color: #ffffff;
+    width: 75%;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    .project {
+        flex-direction: column; /* На мобильных устройствах: картинка над текстом */
+        text-align: center;
+    }
+
+    .project__image {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .project--reversed {
+        flex-direction: column; /* Оставляем вертикальное выравнивание на мобильных */
+    }
+}
