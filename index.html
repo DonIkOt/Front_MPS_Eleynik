@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио Header</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
-    
+
     <header class="header">
         <div class="container">
-            <div class="header_content">
+            <div class="header__content">
                     <!-- Блок с никнеймом -->
-                    <div class="nickname">@NICKNAME</div>
+                    <div class="header__nickname">@NICKNAME</div>
                     <!-- Блок с навигацией -->
                     <nav class="nav">
+                    <nav class="header__nav">
                         <a href="#works">МОИ РАБОТЫ</a>
                         <a href="#about">ОБО МНЕ</a>
                         <a href="#contacts">КОНТАКТЫ</a>
@@ -24,9 +25,10 @@
             </div>
             </div>
     </header>
+
     <section class="about-section">
         <div class="container">
-            <div class="header_content">
+            <div class="about-section__content">
             <div class="text-content">
                 <h1>Я - ФРОНТЕНДЕР</h1>
                 <p>Какая-то очень интересная информация обо мне. Очень интересная информация...</p>
@@ -39,9 +41,33 @@
         
         </div>
     </section>
+    <section class="skills-section">
+        <div class="container">
+            <h2 class="skills-section__title">Я умею</h2>
+            <div class="skills-section__content">
+                <div class="skill">
+                    <div class="skill__image-container">
+                        <img src="html.jpg" alt="HTML" class="skill__image">
+                    </div>
+                    <p class="skill__name">HTML</p>
+                </div>
+                <div class="skill">
+                    <div class="skill__image-container">
+                        <img src="java.png" alt="CSS" class="skill__image">
+                    </div>
+                    <p class="skill__name">CSS</p>
+                </div>
+                <div class="skill">
+                    <div class="skill__image-container">
+                        <img src="css.jfif" alt="JS" class="skill__image">
+                    </div>
+                    <p class="skill__name">JS</p>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
-
 
 
 

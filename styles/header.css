@@ -1,0 +1,33 @@
+/* Стили для header */
+.header {
+    background-color: var(--primary-bg);
+    padding: 20px 0;
+    border-bottom:  1px solid grey ;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 55px 0;
+
+}
+
+
+/* Блок с никнеймом */
+.header__nickname {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Montserrat',sans-serif;
+}
+/* Блок с навигацией */
+.header__nav {
+    display: flex;
+    gap: 40px; /* расстояние между ссылками */
+}
+.header__nav a {
+    font-size: 36px;
+    color: white;
+    font-family: 'Inter',serif;
+}
