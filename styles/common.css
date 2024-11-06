@@ -5,9 +5,17 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+ 
+
 :root {
     --primary-bg: #001f3f;
     --primary-color: #ffffff;
+    --title-font:'Montserrat',sans-serif;
+    --title-font-weight:bold;
+    --title-font-size: 72px;
 }
 
 body {

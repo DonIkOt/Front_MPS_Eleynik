@@ -5,9 +5,15 @@
     border-top:  1px solid grey ;
 }
 
-.header__content {
+.header {
+    background-color: var(--primary-bg);
+    padding: 20px 0;
+    border-bottom:  1px solid grey ;
+}
+
+.nav__content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin: 55px 0;
 
@@ -15,20 +21,33 @@
 
 
 /* Блок с никнеймом */
-.header__nickname {
+.nav__nickname {
     color: white;
     font-size: 36px;
     font-weight: bold;
     font-family: 'Montserrat',sans-serif;
 }
+
 /* Блок с навигацией */
-.foter__nav {
+.nav {
     display: flex;
     gap: 40px; /* расстояние между ссылками */
 }
-.foter__nav a {
+
+.nav__footer {
+    display: flex;
+    gap: 40px; /* расстояние между ссылками */
+}
+.nav a {
     font-size: 36px;
     color: white;
     font-family: 'Inter',serif;
-    text-decoration: none;
 }
+
+.nav__footer a {
+    font-size: 36px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Inter',serif;
+}
+

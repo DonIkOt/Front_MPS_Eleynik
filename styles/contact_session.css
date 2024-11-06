@@ -21,7 +21,7 @@
     flex-direction: column;
     justify-content: space-between;
     background-color: white; /* Белый фон формы */
-    padding: 5vh;
+    padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
 }
@@ -32,7 +32,7 @@
 
 .contact-form__input {
     width: 100%;
-    padding: 3vh;
+    padding: 15px;
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
     border: 1px solid #ddd;
@@ -47,13 +47,13 @@
 /* Кнопки формы */
 .contact-form__buttons {
     display: flex;
-    margin-top: 5vh;
+    margin-top: 20px;
     justify-content: space-between;
     gap: 20px;
 }
 
 .contact-form__button {
-    padding: 3vh 4vh;
+    padding: 15px 20px ;
     font-size: 16px;
     border: none;
     font-family: 'Montserrat', sans-serif;

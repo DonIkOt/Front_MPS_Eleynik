@@ -18,8 +18,8 @@
 .header__nickname {
     color: white;
     font-size: 36px;
-    font-weight: bold;
-    font-family: 'Montserrat',sans-serif;
+    font-weight: var(--title-font-weight);
+    font-family: var(--title-font);
 }
 /* Блок с навигацией */
 .header__nav {
