@@ -53,3 +53,12 @@
     font-family: 'Montserrat', sans-serif;
     color: #ffffff;
 }
+
+@media (max-width: 1024px) {
+    .skills-section__content {
+        
+        flex-direction: column;
+        gap: 20px;
+       
+    }
+}

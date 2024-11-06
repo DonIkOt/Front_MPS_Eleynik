@@ -72,7 +72,7 @@
 }
 
 /* Адаптивность */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .contacts-section__content {
         flex-direction: column;
         gap: 20px;

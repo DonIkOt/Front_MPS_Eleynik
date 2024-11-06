@@ -51,3 +51,16 @@
     font-family: 'Inter',serif;
 }
 
+@media (max-width: 1024px) {
+    .nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .nav__footer {
+        flex-direction: column;
+        gap: 20px; /* расстояние между ссылками */
+    }
+
+}
+
