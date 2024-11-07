@@ -34,10 +34,7 @@ function max_of_three_numbers(a,b,c) {
   const c1=300
 
   console.log(max_of_three_numbers(a1, b1,c1));
-  
-  function sum_two_numbers(a,b) {
-    return a+b;
-  }
+
 
   function getLongestString() {
     // Запрашиваем у пользователя, сколько строк он хочет ввести
@@ -70,7 +67,6 @@ function max_of_three_numbers(a,b,c) {
     return longestString;
   }   
 
- console.log('!!');
  getLongestString()
 
 
