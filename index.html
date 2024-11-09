@@ -98,6 +98,9 @@
                 </div>
             </div>
         </div>
+        <!-- Кнопка "Добавить проект" -->
+        <button class="contact-button" id="add-project-button">Добавить проект</button>
+        </div>
     </section>
 
     <section class="contact-section">
@@ -157,6 +160,18 @@
         </div>
         </div>
     </footer>
+    <div class="modal js-modal">
+        <div class="modal__bg"></div>
+        <div class="modal__wrap">
+            <h3>Добавить новый проект</h3>
+            <input type="text" id="project-title" placeholder="Название проекта" class="modal__input">
+            <textarea id="project-description" placeholder="Описание проекта" class="modal__input"></textarea>
+            <div class="modal__buttons">
+                <button id="modal-ok-button" class="contact-button">Ок</button>
+                <button type="button" class="modal__close">Отмена</button>
+            </div>
+        </div>
+    </div>
     <script src="java.js"></script>
 </body>
 </html>

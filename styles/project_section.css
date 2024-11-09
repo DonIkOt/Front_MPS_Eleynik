@@ -72,6 +72,22 @@
     font-family: 'Roboto', sans-serif;
 }
 
+#add-project-button {
+    display: block; /* Делает кнопку блочным элементом */
+    margin: 30px auto; /* Отступ сверху и снизу 30px, а по бокам авто для центрирования */
+    padding: 10px 20px; /* Добавляем внутренние отступы */
+    background-color: #007BFF; /* Цвет кнопки */
+    color: white; /* Цвет текста */
+    border: none; /* Убираем рамку */
+    border-radius: 5px; /* Скругляем углы */
+    font-size: 16px; /* Размер текста */
+    cursor: pointer; /* Указатель при наведении */
+}
+
+#add-project-button:hover {
+    background-color: #0056b3; /* Темнее при наведении */
+}
+
 /* Адаптивные стили */
 @media (max-width: 768px) {
     .project {
