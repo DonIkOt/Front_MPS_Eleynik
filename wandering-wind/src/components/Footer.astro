@@ -1,0 +1,82 @@
+  <footer id="end" class="foter">
+        <div class="container">
+            <div class="nav__content">
+                <!-- Блок с никнеймом -->
+                <div class="nav__nickname">@NICKNAME</div>
+                <!-- Блок с навигацией -->
+                <nav class="nav__footer">
+                    <a href="#works">МОИ РАБОТЫ</a>
+                    <a href="#about">ОБО МНЕ</a>
+                    <a href="#contacts">КОНТАКТЫ</a>
+                </nav>
+            </div>
+        </div>
+        </div>
+    </footer>
+<style>
+
+    .foter {
+    background-color: var(--primary-bg);
+    padding: 20px 0;
+    border-top:  1px solid grey ;
+}
+
+.header {
+    background-color: var(--primary-bg);
+    padding: 20px 0;
+    border-bottom:  1px solid grey ;
+}
+
+.nav__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 55px 0;
+
+}
+
+
+/* Блок с никнеймом */
+.nav__nickname {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Montserrat',sans-serif;
+}
+
+/* Блок с навигацией */
+.nav {
+    display: flex;
+    gap: 40px; /* расстояние между ссылками */
+}
+
+.nav__footer {
+    display: flex;
+    gap: 40px; /* расстояние между ссылками */
+}
+.nav a {
+    font-size: 36px;
+    color: white;
+    font-family: 'Inter',serif;
+}
+
+.nav__footer a {
+    font-size: 36px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Inter',serif;
+}
+
+@media (max-width: 1024px) {
+    .nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .nav__footer {
+        flex-direction: column;
+        gap: 20px; /* расстояние между ссылками */
+    }
+
+}
+</style>

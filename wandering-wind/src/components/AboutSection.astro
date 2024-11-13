@@ -1,0 +1,102 @@
+---
+---
+ <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-section__content">
+                <div class="text-content">
+                    <h1>Я - ФРОНТЕНДЕР</h1>
+                    <p>Какая-то очень интересная информация обо мне. Очень интересная информация...</p>
+                    <button class="contact-button">СВЯЗАТЬСЯ СО МНОЙ</button>
+                </div>
+                <div class="avatar-container">
+                    <img src="avat.jpg" alt="Аватар" class="avatar">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+ <style>
+ .about-section {
+    min-height: calc(100vh - 84px);
+    padding: 20px;
+    padding-top: 16vh;
+    background-color: var(--primary-bg);
+}
+
+/* Блок с текстом */
+.text-content {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    margin-bottom: 150px;
+}
+.text-content h1 {
+    color: #D9D9D9;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 64px;
+    font-weight: 800;  
+    margin: 20px;
+    white-space: nowrap;
+}
+.text-content p {
+    font-family: 'Roboto', sans-serif;
+    color: #D9D9D9;
+    font-size: 36px;
+    line-height: 1,17em;
+    padding-right: 10%;
+    margin: 20px;
+}
+.contact-button {
+    padding: 0.5em 1.5em; /* Отступы для вертикали и горизонтали */
+    background-color: #d3d3d3; /* Цвет фона кнопки */
+    color: var(--primary-bg); /* Цвет текста */
+    font-size: 40px; /* Размер шрифта */
+    font-weight: bold;
+    border: none;
+    border-radius: 30px; /* Скругление краев кнопки */
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    display: inline-block; /* Гарантирует, что кнопка занимает нужное место по размеру текста */
+}
+.contact-button:hover {
+    background-color: #ff9933; /* Цвет фона при наведении */
+    color: #FFFFFF;
+}
+
+.about-section__content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Аватар */
+.avatar-container {
+     /* Задаем ширину контейнера относительно родителя */
+    max-width: 516px;
+    aspect-ratio: 1 / 1; /* Сохраняем квадратное соотношение сторон */
+    border-radius: 50%; /* Делает аватар круглым */
+    overflow: hidden;
+    position: relative;
+    top: -50px;
+    
+}
+.avatar {
+    width: 100%; /* Изображение полностью заполняет контейнер */
+    height: 100%;
+    object-fit: cover; /* Подстраивает изображение под контейнер */
+}
+
+@media (max-width: 1024px) {
+    .about-section__content {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+    }
+
+}
+</style>

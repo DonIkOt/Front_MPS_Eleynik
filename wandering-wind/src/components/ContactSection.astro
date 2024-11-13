@@ -1,0 +1,99 @@
+ <section class="contact-section">
+        <div class="container">
+            <h2 class="contact-section__title">ОСТАВЬТЕ ЗАЯВКУ</h2>
+            <form class="contact-form">
+                <div class="contact-form__group">
+                    <input type="text" placeholder="Ваше имя" class="contact-form__input">
+                </div>
+                <div class="contact-form__group">
+                    <input type="email" placeholder="Ваша почта" class="contact-form__input">
+                </div>
+                <div class="contact-form__group">
+                    <input type="tel" placeholder="Ваш телефон" class="contact-form__input">
+                </div>
+                <div class="contact-form__buttons">
+                    <button type="reset" class="contact-form__button contact-form__button--reset">Очистить</button>
+                    <button type="submit" class="contact-form__button contact-form__button--submit">Отправить</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+ <style>
+ .contact-section {
+    background-color: #f4e9dd; /* Цвет фона секции */
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-section__title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+    color: #333; /* Цвет заголовка */
+    font-size: 72px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Форма */
+.contact-form {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white; /* Белый фон формы */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.contact-form__group {
+    margin-bottom: 20px;
+}
+
+.contact-form__input {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid #ddd;
+    background-color: #f8f3ef; /* Цвет фона полей */
+}
+
+.contact-form__input:focus {
+    outline: none;
+    border-color: #b3b3b3;
+}
+
+/* Кнопки формы */
+.contact-form__buttons {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.contact-form__button {
+    padding: 15px 20px ;
+    font-size: 16px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+.contact-form__button--reset {
+    background-color: #f8f3ef;
+    color: #333;
+}
+
+.contact-form__button--submit {
+    background-color: #333;
+    color: #fff;
+}
+
+.contact-form__button:hover {
+    opacity: 0.9;
+}
+
+</style>

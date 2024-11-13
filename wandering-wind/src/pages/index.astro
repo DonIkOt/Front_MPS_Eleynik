@@ -1,0 +1,38 @@
+---
+import Header from '../components/Header.astro';
+import AboutSection from '../components/AboutSection.astro';
+import SkillsSection from '../components/SkillsSection.astro';
+import ProjectsSection from '../components/ProjectSection.astro';
+import ContactSection from '../components/ContactSection.astro';
+import QuotesSection from '../components/Quotes.astro';
+import Footer from '../components/Footer.astro';
+import ModalWindow from '../components/ModalWindow.astro';
+
+import '../../public/styles/CommonStyles.css';
+
+---
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио Header</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+<Header />
+<AboutSection />
+<SkillsSection />
+<ProjectsSection />
+<ContactSection />
+<QuotesSection />
+<Footer />
+<ModalWindow />
+
+
+<!-- Подключение JavaScript -->
+<script src="/src/scripts/main.js" type="module"></script>
+</body>
+
+

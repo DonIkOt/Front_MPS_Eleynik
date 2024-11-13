@@ -1,0 +1,143 @@
+ <section id="works" class="projects-section">
+        <div class="container">
+            <h2 class="projects-section__title">Мои проекты</h2>
+            <div class="projects-section__content">
+                <div class="project project--normal">
+                    <img src="java.png" alt="Работа 1" class="project__image">
+                    <div class="project__info">
+                        <h3 class="project__title">РАБОТА 1</h3>
+                        <p class="project__description">Краткое описание работы</p>
+                    </div>
+                </div>
+
+                <div class="project project--reversed">
+                    <img src="html.jpg" alt="Работа 2" class="project__image">
+                    <div class="project__info">
+                        <h3 class="project__title">РАБОТА 2</h3>
+                        <p class="project__description">Краткое описание работы</p>
+                    </div>
+                </div>
+
+                <div class="project project--normal">
+                    <img src="java.png" alt="Работа 3" class="project__image">
+                    <div class="project__info">
+                        <h3 class="project__title">РАБОТА 3</h3>
+                        <p class="project__description">Краткое описание работы</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Кнопка "Добавить проект" -->
+        <button class="contact-button" id="add-project-button">Добавить проект</button>
+        </div>
+    </section>
+
+<style>
+.projects-section {
+    color: var(--primary-color);
+    padding: 50px 0;
+    background-color: var(--primary-bg);
+}
+
+/* Секция проектов */
+
+.projects-section__title {
+    font-size: 72px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: #ffffff;
+    padding-top: 70px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+/* Вертикальное расположение проектов */
+.projects-section__content {
+    display: flex;
+    flex-direction: column; /* Проекты идут друг под другом */
+    gap: 115px;
+    margin: 150px;
+    
+}
+
+/* Проекты */
+.project {
+    display: flex;
+    flex-direction: row;
+    /*background-color: #1F3558;*/
+    transition: background-color 0.3s ease;
+}
+
+.project:hover {
+    background-color: #27486C;
+}
+
+/* Управление порядком элементов в проекте */
+.project--reversed {
+    flex-direction: row-reverse; /* Меняет порядок элементов: текст → картинка */
+}
+
+/* Изображение в проекте */
+.project__image {
+    width: 50%;
+    height: 367px;
+}
+
+/* Контент проекта */
+.project__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Центровка по вертикали */
+    align-items: flex-end; /* Текст примыкает к противоположному краю */
+    flex: 1; /* Растягиваем на всю доступную ширину */
+}
+
+.project__title {
+    font-size: 48px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    width: 75%;
+    color: #ffffff;
+}
+
+.project__description {
+    font-size: 36px;
+    color: #ffffff;
+    width: 75%;
+    font-family: 'Roboto', sans-serif;
+}
+
+#add-project-button {
+    display: block; /* Делает кнопку блочным элементом */
+    margin: 30px auto; /* Отступ сверху и снизу 30px, а по бокам авто для центрирования */
+    padding: 10px 20px; /* Добавляем внутренние отступы */
+    background-color: #007BFF; /* Цвет кнопки */
+    color: white; /* Цвет текста */
+    border: none; /* Убираем рамку */
+    border-radius: 5px; /* Скругляем углы */
+    font-size: 16px; /* Размер текста */
+    cursor: pointer; /* Указатель при наведении */
+}
+
+#add-project-button:hover {
+    background-color: #0056b3; /* Темнее при наведении */
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    .project {
+        flex-direction: column; /* На мобильных устройствах: картинка над текстом */
+        text-align: center;
+    }
+
+    .project__image {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .project--reversed {
+        flex-direction: column; /* Оставляем вертикальное выравнивание на мобильных */
+    }
+}
+</style>

@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+ 
+
+:root {
+    --primary-bg: #001f3f;
+    --primary-color: #ffffff;
+    --title-font:'Montserrat',sans-serif;
+    --title-font-weight:bold;
+    --title-font-size: 72px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b3b3b3;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 10px 0;
+    font-weight: 700;
+}
+
+p {
+    margin: 0 0 20px 0;
+    line-height: 1.6;
+}
