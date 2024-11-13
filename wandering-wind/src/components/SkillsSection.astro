@@ -1,22 +1,32 @@
+--- 
+import { Image } from 'astro:assets';
+
+import BackImage from '../Images/backs.jpg';
+import htmlImage from '../Images/html.jpg';
+import javaImage from '../Images/java.png';
+import cssImage from '../Images/css.jfif';
+
+---
+ 
  <section class="skills-section">
         <div class="container">
             <h2 class="skills-section__title">Я умею</h2>
             <div class="skills-section__content">
                 <div class="skill">
                     <div class="skill__image-container">
-                        <img src="html.jpg" alt="HTML" class="skill__image">
+                        <Image src={htmlImage} alt="HTML" class="skill__image">
                     </div>
                     <p class="skill__name">HTML</p>
                 </div>
                 <div class="skill">
                     <div class="skill__image-container">
-                        <img src="java.png" alt="CSS" class="skill__image">
+                        <Image src={javaImage} alt="CSS" class="skill__image">
                     </div>
                     <p class="skill__name">CSS</p>
                 </div>
                 <div class="skill">
                     <div class="skill__image-container">
-                        <img src="css.jfif" alt="JS" class="skill__image">
+                        <Image src={javaImage} alt="JS" class="skill__image">
                     </div>
                     <p class="skill__name">JS</p>
                 </div>

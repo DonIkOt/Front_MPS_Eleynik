@@ -1,5 +1,9 @@
 ---
+import { Image } from 'astro:assets';
+import avat from '../Images/avat.jpg';
 ---
+
+
  <section id="about" class="about-section">
         <div class="container">
             <div class="about-section__content">
@@ -9,7 +13,7 @@
                     <button class="contact-button">СВЯЗАТЬСЯ СО МНОЙ</button>
                 </div>
                 <div class="avatar-container">
-                    <img src="avat.jpg" alt="Аватар" class="avatar">
+                    <Image src={avat} alt="Аватар" class="avatar">
                 </div>
             </div>
 

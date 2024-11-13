@@ -1,9 +1,17 @@
+--- 
+import { Image } from 'astro:assets';
+
+
+import htmlImage from '../Images/html.jpg';
+import javaImage from '../Images/java.png';
+---
+ 
  <section id="works" class="projects-section">
         <div class="container">
             <h2 class="projects-section__title">Мои проекты</h2>
             <div class="projects-section__content">
                 <div class="project project--normal">
-                    <img src="java.png" alt="Работа 1" class="project__image">
+                    <Image src= { htmlImage } alt="Работа 1" class="project__image">
                     <div class="project__info">
                         <h3 class="project__title">РАБОТА 1</h3>
                         <p class="project__description">Краткое описание работы</p>
@@ -11,7 +19,7 @@
                 </div>
 
                 <div class="project project--reversed">
-                    <img src="html.jpg" alt="Работа 2" class="project__image">
+                    <Image src= { javaImage } alt="Работа 2" class="project__image">
                     <div class="project__info">
                         <h3 class="project__title">РАБОТА 2</h3>
                         <p class="project__description">Краткое описание работы</p>
@@ -19,7 +27,7 @@
                 </div>
 
                 <div class="project project--normal">
-                    <img src="java.png" alt="Работа 3" class="project__image">
+                    <Image src= { htmlImage } alt="Работа 3" class="project__image">
                     <div class="project__info">
                         <h3 class="project__title">РАБОТА 3</h3>
                         <p class="project__description">Краткое описание работы</p>
